@@ -93,11 +93,6 @@ body{
     left: 0;
 }
 
-#greetingText{
-    color: #000000;
-}
-
-
 #navbar{
     display:flex;
     align-items: center;
@@ -113,14 +108,15 @@ body{
 #navbar li a{
     text-decoration: none;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: #1a1a1a;
     transition: 0.3s ease;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #navbar li :hover,
 #navbar li :active{
-    color: #bef713;
+    color: #ff0000;
 }
 
 #navbar li a.active::after,
@@ -128,10 +124,19 @@ body{
     content: "";
     width: 30%;
     height: 2px;
-    background:#bef713 ;
+    background:#cf2020 ;
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
 }
 
 #hero{
@@ -160,13 +165,13 @@ body{
 #hero button{
     animation: fadeZoom 2s infinite ;
     background-image: url("img/button/button.png");
-    background-color: rgb(243, 157, 157);
-    border:8px solid;
-    border-color: #d3e62d;
-    padding: 20px 80px 20px 65px;
-    border-radius: 100% 100%;
-    font-size: xx-large;
-    height: 15vh;
+    background-color: transparent;
+    border: 0;
+    color: #088178;
+    padding: 14px 80px 20px 65px;
+    background-repeat: no-repeat;
+    font-size: 25px;
+    cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
 }
@@ -434,7 +439,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url(img/banner/b14.png);
+    background-image: url("img/banner/b14.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -551,6 +556,176 @@ footer .copyright{
 
 }
 
+#page-header{
+    background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+}
+
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color:#088178;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#prodetails .single-pro-img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    padding-top: 30px;
+    width: 50%;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+#page-header.blog-header{
+    background-image: url("img/banner/b19.jpg");
+}
+
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.1s;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+
+}
+
+#blog .blog-details a:hover{
+    color: #088178;
+
+}
+#blog .blog-details a:hover::after{
+    background-color: #088178;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -42px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #b0b5ce;
+    z-index: -10;
+}
+
+#page-header.about-header{
+    background-image: url("img/about/banner.png");
+}
+
+ 
 
 @keyframes scroll-left {
   0% {
