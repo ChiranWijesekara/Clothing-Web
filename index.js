@@ -1,4 +1,4 @@
-function getGreeting() {
+/*function getGreeting() {
     const hour = new Date().getHours();
     if (hour >= 5 && hour < 12) {
       return "🌞 Good Morning!";
@@ -37,3 +37,20 @@ document.querySelectorAll('#navbar a').forEach(link => {
         mobileMenuBtn.querySelector('i').classList.add('fa-bars');
     });
 });
+
+*/
+const bar= document.getElementById('bar');
+const nav=document.getElementById('navbar');
+const close=document.getElementById('close');
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}
