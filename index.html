@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CT Clothes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqurey.css">
+    <link rel="stylesheet" href="media.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -15,12 +15,8 @@
     <section id="header">
         <a href="#"><img class="logo" src="img/logo/logo.png"></a>
         <div class="greeting-container">
-             <p id="greetingText"></p>
+            <!-- <p id="greetingText"></p> -->
         </div>
-         <button id="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-    </button>
-        
 
         <div>
             <ul id="navbar">
@@ -28,9 +24,15 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Cart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li id="lg-bag"><a href="#" id="close"><i class="fa fa-times"></i></a></li>
             </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa fa-bars"></i>
         </div>
         
     </section>
