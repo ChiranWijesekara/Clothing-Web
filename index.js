@@ -8,7 +8,6 @@
       return "🌙 Good Night!";
     }
   }
-
   document.getElementById("greetingText").textContent = getGreeting();
 
 // Hamburger menu functionality
