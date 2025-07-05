@@ -3,7 +3,6 @@
     .section-p1{
         padding: 40px 40px;
     }
-
     #navbar{
         display: flex;
         flex-direction: column;
